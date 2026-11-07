@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#f59e0b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="flame" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#fef08a"/>
+      <stop offset="70%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="diyaBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="45%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle badge -->
+  <circle cx="32" cy="32" r="30" fill="#14080b" stroke="#f59e0b" stroke-width="2"/>
+
+  <!-- Flame Halo Glow -->
+  <circle cx="32" cy="22" r="16" fill="url(#halo)"/>
+
+  <!-- Flame Teardrop -->
+  <path d="M32 8 C35 15, 41 21, 41 27 C41 33, 37 37, 32 37 C27 37, 23 33, 23 27 C23 21, 29 15, 32 8 Z" fill="url(#flame)"/>
+
+  <!-- Inner Bright Core -->
+  <path d="M32 17 C33.5 21, 36 24, 36 28 C36 31, 34.2 33, 32 33 C29.8 33, 28 31, 28 28 C28 24, 30.5 21, 32 17 Z" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Diya Lamp Base -->
+  <path d="M12 37 C12 48, 20 54, 32 54 C44 54, 52 48, 52 37 L12 37 Z" fill="url(#diyaBody)"/>
+  
+  <!-- Diya Rim Highlight -->
+  <ellipse cx="32" cy="37" rx="20" ry="2.5" fill="#fde68a" opacity="0.8"/>
+  <ellipse cx="32" cy="37" rx="16" ry="1.5" fill="#b45309"/>
+
+  <!-- Center Decorative Gem -->
+  <circle cx="32" cy="46" r="2.2" fill="#fef08a"/>
+</svg>
